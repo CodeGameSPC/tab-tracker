@@ -10,7 +10,7 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(morgan('tiny'));
 /////////////////////////
-app.get('/register',(req,res)=>{
+app.post('/register',(req,res)=>{
     res.send({
         message:`Hello ${req.body.email}. Your Email Was Registered. Have Fun :-)`
     });
